@@ -3,33 +3,41 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>contact page</title>
+  <title>Contact Me</title>
+  <!--<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">-->
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
+
 <body>
-  <header>
-      <h1>Olu Jaiyeoba</h1>
-  </header>
-  <hr>
+    <div class="top">
+    <header>
+      <div class="container">
+           <div class="logo">
+            <h1>Olu Jaiyeoba</h1>
+            </div>
 
-  <section id="about-portfolio">
-      <ul>
-          <li>About</li>
-          <li>Porfolio</li>
-          <li>Contact</li>
-      </ul>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Porfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+      </div>
+    </header>
+    </div>
 
 
-   </section>
+       <section class="body-section">
 
+                <div class="container">
 
-  <div class="container">
-    
-    <section id="contact">
-      <h2>Contact</h2>
+        <div id="contact" class="section-left">
+          <div class="inner">
+                     <h2>Contact</h2>
       <hr>
 
-      <form action="/action_page.php">
+      <form action="/action_page.php" class="contact-form">
         <label for="name">Name</label>
         <input type="text" id="name" name="Name" placeholder="John smith">
 
@@ -37,38 +45,50 @@
         <input type="text" id="email" name="email" placeholder="example@gmail.com">
 
         <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="write a message">
-        </textarea>
+        <textarea id="message" name="message" placeholder="write a message">        </textarea>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="submit-button">
        
       </form>
   
-    </section>
-    <section id="connect">
-        <aside>
-            <h3>connect with me</h3>
-            <hr>
-                <a href="https://github.com/gab02727"><img src="https://s10.postimg.org/e82ltcn15/if_github_2308116.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/oluwagbenga-jaiyeoba-90b1614b/"><img src="https://s10.postimg.org/a1hrdmpvt/if_Popular_Social_Media-22_2329259.png" alt="linkedin"> </a>
-                <a href="https://stackoverflow.com/users/8850995/gab027"><img src="https://s10.postimg.org/hhh0zsnzd/if_stackoverflow_273179.png" alt="stack overflow"></a>
-        </aside>
-        
+          </div>
 
-    </section>
-</div>
+        </div>
+
+        <div id="connect" class="section-right">
+           <div class="inner">
+                <aside>
+                <h3>Connect with Me</h3>
+                <hr>
+                <div class="social">
+                    <ul>
+                        <li class="github"><a href="https://github.com/gab02727" target="_blank"><img src="./assets/images/github.png" alt="github"></a></li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/oluwagbenga-jaiyeoba-90b1614b/" target="_blank"><img src="./assets/images/linkedin.png" alt="linkedin"> </a></li>
+                        <li class="stackoverflow"><a href="https://stackoverflow.com/users/8850995/gab027" target="_blank"><img src="./assets/images/stackoverflow.png" alt="stack overflow"></a></li>
+                    </ul>
+                </div>
+            </aside>
+           </div>
+
+        </div>
+        </div>
+
+ 
+         </section>
 
 
-<footer>
-    <p>copyright 2016 Jaiyeoba</p>
-</footer>
-    
+
+
+    <footer>
+        <div class="container">
+            <div class="inner">
+                <p>Copyright &copy; 2016 Jaiyeoba</p>
+            </div>
+        </div>
+    </footer>
 
 
 
 
-
-
-
-  </body>
-  </html>
+</body>
+</html>
